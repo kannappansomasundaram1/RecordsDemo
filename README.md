@@ -6,7 +6,7 @@
 int i = 10;
 
 Person p1 = new Person() {
-Name = "Person1,
+Name = "Person1",
 Place = "Place1"
 }
 ```
