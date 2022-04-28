@@ -1,4 +1,4 @@
-﻿var accountState = new AccountState(
+﻿var account = new Account(
     Currency: "GBP",
     Status: AccountStatus.Requested,
     AllowedOverdraft: 500.00m,
@@ -6,10 +6,15 @@
     {
         new(100m, "Atm Deposit", DateOnly.FromDateTime(DateTime.Today.AddDays(-1)))
     });
-Console.WriteLine(accountState);
 
+Console.WriteLine("---Printing Account Details----");
+Console.WriteLine(account);
+foreach (var transaction in account.Transactions)
+{
+    Console.WriteLine(transaction);
+}
 
-var anotherAccount = accountState with
+var anotherAccount = account with
 {
 //Currency = "EUR", Error
     AllowedOverdraft = 200.00m,
@@ -19,4 +24,9 @@ var anotherAccount = accountState with
     }
 };
 
+Console.WriteLine("---Printing Another Account Details----");
 Console.WriteLine(anotherAccount);
+foreach (var transaction in anotherAccount.Transactions)
+{
+    Console.WriteLine(transaction);
+}

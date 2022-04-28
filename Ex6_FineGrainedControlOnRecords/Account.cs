@@ -1,7 +1,7 @@
 using System.Collections.Immutable;
 
 //Immutable all the way through
-public record AccountState
+public record Account
 (
     CurrencyCode Currency,
     AccountStatus Status = AccountStatus.Requested,

@@ -8,8 +8,8 @@
 var myClone = me;
 myClone.Location = "India";
 
-Console.WriteLine($"Where am I? {me.Location}");
-Console.WriteLine($"Where is my clone? {myClone.Location}");
+Console.WriteLine($"Where am I? {me.Location}"); //India
+Console.WriteLine($"Where is my clone? {myClone.Location}"); //India
 
 public class Person
 {

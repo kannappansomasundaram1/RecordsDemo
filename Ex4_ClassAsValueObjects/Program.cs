@@ -15,7 +15,7 @@ Console.WriteLine(me);
 
 //Fixing the Aliasing Problem
 // myClone = me;
-// Below line will Error since we made the properties as init only
+// // Below line will Error since we made the properties as init only
 // myClone.Location = "India";
 
 myClone = new Person

@@ -11,8 +11,8 @@ var myClone = new Person
 };
 
 //Equality
-Console.WriteLine($"Are me and my clone are equal? {me.Equals(myClone)}");
-Console.WriteLine(me);
+Console.WriteLine($"Are me and my clone are equal? {me.Equals(myClone)}"); //false
+Console.WriteLine(me); //Person
 
 public class Person
 {
