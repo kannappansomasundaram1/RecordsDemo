@@ -18,7 +18,7 @@ Console.WriteLine($"Where is my clone? {myClone.Location}");
 Console.WriteLine($"Equal? {me.Equals(myClone)}");
 
 Console.WriteLine("-------Deconstruction-------");
-var (name1, location) = me;
+var (name, location) = me;
 
-Console.WriteLine($"My name: {name1}");
-Console.WriteLine($"My Location: {location}");
+Console.WriteLine($"My name: {name}");
+Console.WriteLine($"My Location: {location}") ;
